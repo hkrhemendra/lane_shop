@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body{
+
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.cart i{
+    font-size: 20px;
+}
+
+
+.margin-wrapper{
+    height: 100%;
+    padding: 0 8vw;
+}
+
+.carousel{
+    
+    background-image: url(/images/bg-image-5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: calc(100% - 100px);
+    position: relative;
+}
+
+
+.left {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0 5vw;
+}
+
+.left p{
+    font-size: large;
+    margin-bottom: 3vh;
+}
+
+.left button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.left button:hover{
+    background-color: #FF5151;
+    color: white;
+}
+
+.offer-container{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.offer{
+    background-color: lightcoral;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+#offer-1{
+    background-image: url(https://demo.hasthemes.com/lanes-preview-v2/lanes/assets/images/banner/banner-01.jpg);
+}
+
+#offer-2{
+    background-image: url(https://demo.hasthemes.com/lanes-preview-v2/lanes/assets/images/banner/banner-02.jpg);
+}
+
+#offer-3{
+    background-image: url(https://demo.hasthemes.com/lanes-preview-v2/lanes/assets/images/banner/banner-03.jpg);
+}
+
+.featured-product{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #FF5151;
+}
+
+.featured-product h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tabs button {
+    background-color: white;
+    border: none;
+    color: grey;
+    height: 100%;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.tabs .active{
+    color: #FF5151;
+}
+
+
+.products{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product{
+    border: 1px solid grey;
+}
+
+.product .product-img{
+    position: relative;
+}
+
+.product .action{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    background-color: rgba(255, 81, 81, 0.5);
+    bottom: 0;
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product .product-img:hover > .action{
+    display: flex;
+}
+
+
+.product h5 {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.product h6 {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px 10px 10px 10px;
+    color: #FF5151;
+}
+
+
+.small-products{
+    margin: 10vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sm-product-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sm-product{
+    margin: 10px;
+    display: flex;
+    border: 1px solid grey;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.sm-product img {
+    height: 100px;
+}
+
+.price h6{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.flex-price{
+    display: flex;
+    gap: 10px;
+}
+
+.flex-price .sale-price{
+    color: #FF5151;
+}
+
+.flex-price .price{
+    text-decoration: line-through;
+    color: grey;
+    font-size: small;
+}
+
+
+.companies-row {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #F7F8F9;
+    align-items: center;
+}
+
+.companies-row img {
+    height: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F4F8FA;
+    padding: 0 10vw;
+    bottom: 0px;
+}
+
+.about{
+    width: 20%;
+}
+
+.about img{
+    padding-bottom: 50px;
+}
+
+.footer-links{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-links h3{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.footer-links a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
